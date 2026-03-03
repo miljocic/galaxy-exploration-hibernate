@@ -1,0 +1,25 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">milica</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <mapping class="model.Galaksija"/>
+        <mapping class="model.Misija"/>
+        <mapping class="model.NebeskoTelo"/>
+        <mapping class="model.MorfoloskiTip"/>
+        <mapping class="model.Institucija"/>
+        <mapping class="model.Istrazivac"/>
+        <mapping class="model.KategorijaIstrazivaca"/>
+        <mapping class="model.Uloga"/>
+        <mapping class="model.MisijaIstrazivac"/>
+        <mapping class="model.Sum"/>
+
+
+    </session-factory>
+</hibernate-configuration>
